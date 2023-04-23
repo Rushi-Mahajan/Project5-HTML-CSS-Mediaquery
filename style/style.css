@@ -1,0 +1,196 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+    /* background-color: aqua; */
+    background-color: #111827;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    display: flex;
+    /* background-color: black; */
+    height: 5vh;
+    color: white;
+    width: 100vw;    
+    /* flex-direction: row; */
+}
+header nav div img{
+    height: 100%;
+    width: 2%;
+    display: none;
+}
+
+header nav ul{
+    width: 205vh;
+    height: 8vh;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+
+}
+header nav ul li{
+    list-style: none;
+}
+section{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+}
+section aside{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    /* border: 1px solid red; */
+    width:47.5vw
+}
+section aside div span{
+    color: yellow;
+}
+.aside-Text{
+    /* border: 1px solid black; */
+    width: 50%;
+    font-size: 36px;
+}
+.aside-image{
+    /* border: 1px solid black; */
+    width: 50%;
+    height: 100%;
+
+}
+.aside-Text img{
+    width: 15%;
+    height: 30px;
+}
+.aside-image img{
+    width: 100%;
+    height: 100%;
+}
+section main{
+    /* border: 1px solid rgb(18, 4, 4); */
+    margin-top: 15px;
+}
+section main .project-grid{
+
+    display: grid;
+    grid-template-columns:250px 250px;
+    grid-template-rows: 250px 250px;
+    text-align: center;
+    gap:30px
+}
+
+section main div img{
+    height: 100%;
+    width: 100%;
+}
+
+.project-header{
+    text-align: center;
+}
+footer{
+    margin-top: 30px;
+    height: 10vh;
+    /* background-color: grey; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%
+}
+footer div ul{
+    margin-top: 10px;
+    width:100vw;
+    display: flex;
+    /* border: 1px solid black; */
+    flex-direction: row;
+    justify-content: center;
+    gap: 2px;
+}
+footer div ul li{
+    list-style: none;
+}
+footer div ul li img{
+    /* border: 1px solid red; */
+    height: 92%;
+}
+.img1{
+    width: 3vw;
+}
+.img2{
+    width: 3vw;
+}
+.img3{
+    width: 3vw;
+}
+h3{
+    text-decoration: 5px underline blue;
+    
+}
+
+
+@media screen and (max-width:810px) {
+
+    body{
+    background-color: #111827;       
+    }
+    header{
+        height: 5vh;
+    }
+    header nav ul{
+        display: none;
+    }
+    header nav div img{
+        margin-top: 10px;
+        margin-left: 10px;
+        display: flex;
+        width: 5%;
+        height: 100%;
+    }
+    section aside{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        margin-top: 40px;
+        /* border: 1px solid grey; */
+        width: 80%;
+        height: 45%;
+    }
+    .aside-Text{
+        /* border: 1px solid red; */
+        font-size: 25px;
+        /* height: 50%; */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    section main .project-grid{
+        display: flex;
+        /* border: 1px solid aqua; */
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    section main .project-grid img{
+        width: 30%;
+        height: 10%;
+    }
+    section aside .aside-Text img{
+        width: 10%;
+        height: 30px;
+    }
+  
+
+}
